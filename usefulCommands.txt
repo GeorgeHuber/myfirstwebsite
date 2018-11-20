@@ -1,0 +1,5 @@
+Run html file:
+	google-chrome <filename>.html
+	pushd <file>.html; python3 -m http.server 9999; popd;
+	google-chrome 0.0.0.0:9999
+path: /mnt/c/Users/grhub/OneDrive/Desktop/Folders/Projects/myHTML
