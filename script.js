@@ -15,13 +15,14 @@ function sayThank(){
 function final(){
 	conf=confirm("Do you want to continue?");
 	if (conf==true){
-		var i = 1;                     //  set your counter to 
+		var i = 0;                     //  set your counter to 
 
 		function myLoop () {           //  create a loop 
    			setTimeout(function () {    //  call a 3s setT
       			
-			document.getElementById("final").style="font-size: "+i+"px";//  your code here
-      			i++;
+			if(i%4===0){document.getElementById("final").style="font-size: "+i+"px; color: purple";} else {document.getElementById("final").style="font-size: "+i+"px; color: red"; }
+			//  your code here
+      			i=i+2;
 			      if (i < 1000) {  
         				myLoop(i); 
       } }, 50)                       //  ..  setTimeout()
